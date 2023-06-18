@@ -3,12 +3,8 @@ package com.minsait.api.repository;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.jpa.domain.Specification;
 
 import javax.persistence.*;
-import javax.persistence.criteria.Predicate;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "USUARIO", schema = "API")
@@ -37,4 +33,5 @@ public class UsuarioEntity {
 
     @Column(name = "PERMISSOES")
     private String permissoes;
+
 }
