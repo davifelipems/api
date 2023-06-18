@@ -1,4 +1,4 @@
-package com.minsait.api.sicurity.filter;
+package com.minsait.api.security.filter;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
