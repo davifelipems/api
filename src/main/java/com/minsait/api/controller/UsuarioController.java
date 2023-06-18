@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RestController
 @RequestMapping("/api")
-public class UsuarioController {
+public class UsuarioController implements UsuarioSwagger {
 
     @Autowired
     private UsuarioRepository usuarioRepository;
@@ -37,7 +37,7 @@ public class UsuarioController {
 
     @PreAuthorize("hasAuthority('LEITURA_USUARIO')")
     @GetMapping("/usuario/{id}")
-    public ResponseEntity<UsuarioResponse> findBy(@PathVariable long id) {
+    public ResponseEntity<UsuarioResponse> findById(@PathVariable Long id) {
         final var usuarioEntity = usuarioRepository.findById(id);
         UsuarioResponse usuarioResponse = new UsuarioResponse();
         if (usuarioEntity.isPresent()) {
@@ -80,7 +80,7 @@ public class UsuarioController {
 
     @PreAuthorize("hasAuthority('ESCRITA_USUARIO')")
     @DeleteMapping("/usuario/{id}")
-    public ResponseEntity delete(@PathVariable long id) {
+    public ResponseEntity delete(@PathVariable Long id) {
         final var usuarioEntity = usuarioRepository.findById(id);
         if (usuarioEntity.isPresent()) {
             usuarioRepository.delete(usuarioEntity.get());
