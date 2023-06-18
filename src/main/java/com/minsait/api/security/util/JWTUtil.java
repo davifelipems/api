@@ -1,4 +1,4 @@
-package com.minsait.api.sicurity.util;
+package com.minsait.api.security.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

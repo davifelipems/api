@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.minsait.api.controller.dto.ClienteRequest;
 import com.minsait.api.repository.ClienteRepository;
-import com.minsait.api.sicurity.util.JWTUtil;
+import com.minsait.api.security.util.JWTUtil;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

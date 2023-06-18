@@ -6,7 +6,7 @@ import com.jayway.jsonpath.JsonPath;
 import com.minsait.api.controller.dto.GetTokenRequest;
 import com.minsait.api.controller.dto.UsuarioRequest;
 import com.minsait.api.repository.UsuarioRepository;
-import com.minsait.api.sicurity.util.JWTUtil;
+import com.minsait.api.security.util.JWTUtil;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

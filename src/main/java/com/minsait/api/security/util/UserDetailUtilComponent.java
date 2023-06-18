@@ -1,6 +1,6 @@
-package com.minsait.api.sicurity.util;
+package com.minsait.api.security.util;
 
-import com.minsait.api.sicurity.details.CustomUserDetails;
+import com.minsait.api.security.details.CustomUserDetails;
 import org.springframework.stereotype.Component;
 
 @Component

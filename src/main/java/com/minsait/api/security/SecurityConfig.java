@@ -1,7 +1,7 @@
-package com.minsait.api.sicurity;
+package com.minsait.api.security;
 
-import com.minsait.api.sicurity.filter.JWTAuthorizationFilter;
-import com.minsait.api.sicurity.util.JWTUtil;
+import com.minsait.api.security.filter.JWTAuthorizationFilter;
+import com.minsait.api.security.util.JWTUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;

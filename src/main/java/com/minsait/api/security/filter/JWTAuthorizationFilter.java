@@ -1,8 +1,8 @@
-package com.minsait.api.sicurity.filter;
+package com.minsait.api.security.filter;
 
-import com.minsait.api.sicurity.details.CustomUserDetails;
-import com.minsait.api.sicurity.util.JWTUtil;
-import com.minsait.api.sicurity.util.UserDetailUtil;
+import com.minsait.api.security.details.CustomUserDetails;
+import com.minsait.api.security.util.JWTUtil;
+import com.minsait.api.security.util.UserDetailUtil;
 import io.jsonwebtoken.Claims;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
